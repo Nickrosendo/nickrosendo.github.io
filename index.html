@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Nick's Library Portifolio</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Permanent+Marker|Reenie+Beanie" rel="stylesheet"> 
+  <link href="css/carousel.css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+  <div class="about_dev">
+    <p>Website desenvolvido por <img class="dev" src="img/me.jpg">, maiores informações <a class="btn btn-success" href="Portifolio">Portifolio</a>
+    </p>
+  </div>
+  <br/><br/>
+  <div class="menu_principal">
+  	<a href="#" class="logo"><img src="css/img/books_house.png"> </a>
+    <a href="#" class="botoes_menu"><img src="css/img/glyphicons/png/glyphicons-72-book.png">  Livros</a>
+    <a href="#" class="botoes_menu"><img src="css/img/glyphicons/png/glyphicons-40-notes.png"> Política de Empréstimo</a>
+    <a href="#" class="botoes_menu"><img src="css/img/glyphicons/png/glyphicons-164-iphone.png"> Contato</a>
+    <a href="#" class="botoes_menu"><img src="css/img/glyphicons/png/glyphicons-196-info-sign.png"> Sobre Nós</a>
+
+    <div class="busca">
+      <p class="Reenie"> Buscar</p>
+      <input type="tex" name="txtbusca">
+      <button class="botao_busca glyphicon glyphicon-search" type="submit"></button>
+      <a href="#" class="Reenie2"> Busca Avançada</a>
+    </div>
+  </div>
+
+  <br/><br/><br/>
+  <section id="inicio" class="inicio">
+  <div id="carousel-inicial" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-inicial" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-inicial" data-slide-to="1"></li>
+    <li data-target="#carousel-inicial" data-slide-to="2"></li>
+  </ol>
+<!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="css/img/material-publicitario/coletanea.jpg" alt="">
+      <div class="carousel-caption">
+        <p class="label label-success"> Confira nossa incrível coletânea de livros on-line</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="css/img/material-publicitario/emprestimo.jpg" alt="...">
+      <div class="carousel-caption">
+        <p class="label label-warning"> Saiba mais sobre nossa política de empréstimo de livros.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="css/img/material-publicitario/clube.jpeg" alt="...">
+      <div class="carousel-caption">
+        <p class="label label-info"> Venha participar dos nossos grupos de leitura online.</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-inicial" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-inicial" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<a class="page-scroll scroll_down glyphicon glyphicon-chevron-down" href="#books"></a>
+
+</section>
+
+
+<!-- Books Section -->
+<section id="books" class="books-section">
+  <div class="container">
+    <div class="row">
+      
+        <div class="anuncio">
+          <img src="img/livros/harry.jpeg" alt="...">
+          <div class="caption">
+            <h3>Harry Potter</h3>
+            <p>Harry Potter e as Relíquias da Morte é o sétimo e último livro da série Harry Potter, de J. K. Rowling. Foi lançado em 21 de julho de 2007, ao 1º segundo do dia nos países de língua inglesa. </p>
+            <p>
+              <a href="#" class="btn btn-success center" data-toggle="modal" data-target="#ModalHarry" role="button">Mais Detalhes</a>
+            </p>
+          </div>
+        </div>
+      
+        <div class="anuncio">
+          <img  src="img/livros/got.jpeg" alt="...">
+          <div class="caption">
+            <h3>Game of Thrones</h3>
+            <p>Edição luxuosa, com capa acolchoada e integralmente ilustrada, apresenta informações sobre a concepção de uma das séries mais bem-sucedidas da televisão. </p>
+            <p>
+              <a href="#" class="btn btn-success center" data-toggle="modal" data-target="#ModalGot" role="button">Mais Detalhes</a>
+            </p>
+          </div>
+        </div>
+      
+        <div class="anuncio">
+          <img  src="img/livros/percy.jpeg" alt="...">
+          <div class="caption">
+            <h3>Percy Jackson</h3>
+            <p>Primeiro volume da saga Percy Jackson e os olimpianos, O ladrão de raios esteve entre os primeiros lugares na lista das séries mais vendidas do The New York Times. </p>
+            <p>
+              <a href="#" class="btn btn-success center" data-toggle="modal" data-target="#ModalPercy" role="button">Mais Detalhes</a>
+            </p>
+          </div>
+        </div>
+  
+    </div>    
+  </div>
+</section>
+
+<!-- Modal  Harry Ptter-->
+<div class="modal fade" id="ModalHarry" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Harry Potter e as Reliquias da Morte</h4>
+      </div>
+      <div class="modal-body">
+        <h3>Sinopse</h3>
+        Harry está aguardando na rua dos Alfeneiros. A Ordem da Fênix chegará em breve para transferi-lo, em segurança, do endereço de sua família trouxa, sem que Voldemort e seus seguidores saibam. A partir daí, o que Harry deverá fazer? Como será capaz de cumprir a missão, aparentemente impossível, que Dumbledore lhe deixou?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal  Game of Thrones-->
+<div class="modal fade" id="ModalGot" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Game of Thrones – por Dentro da Série da HBO, de Bryan Cogman</h4>
+      </div>
+      <div class="modal-body">
+        <h3>Sinopse</h3>
+        Centenas de fotos dos sets de filmagem, figurinos, roteiros e historias de bastidores revelam como os criadores do programa transformam o conteúdo dos livros e deram vida ao mundo de Westeros.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal  Percy Jackson-->
+<div class="modal fade" id="ModalPercy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Percy Jackson e o ladrão de raios</h4>
+      </div>
+      <div class="modal-body">
+        <h3>Sinopse</h3>
+        O autor conjuga lendas da mitologia grega com aventuras no século XXI. Nelas, os deuses do Olimpo continuam vivos, ainda se apaixonam por mortais e geram filhos metade deuses, metade humanos, como os heróis da Grécia antiga. Marcados pelo destino, eles dificilmente passam da adolescência. Poucos conseguem descobrir sua identidade.
+        O garoto-problema Percy Jackson é um deles. Tem experiências estranhas em que deuses e monstros mitológicos parecem saltar das páginas dos livros direto para a sua vida. Pior que isso: algumas dessas criaturas estão bastante irritadas. Um artefato precioso foi roubado do Monte Olimpo e Percy é o principal suspeito. Para restaurar a paz, ele e seus amigos – jovens heróis modernos – terão de fazer mais do que capturar o verdadeiro ladrão: precisam elucidar uma traição mais ameaçadora que a fúria dos deuses.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Javascript e JQuery do bootstrap e do angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+</body>
+</html>
